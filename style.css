@@ -16,7 +16,7 @@ a{
     transition:all .5s;
 }
 a:hover{
-    color:#BEFFA7;
+    color:#b4cb05;
 }
 .text-disable{
     color:#9D9D9D;
@@ -38,6 +38,15 @@ a:hover{
 }
 .text-30{
     color:#306693;
+}
+.min-81{
+    min-width:81px;
+}
+.min-61{
+    min-width:61px;
+}
+.text-small{
+    font-size:0.5rem;
 }
 .line-clamp-1{
     overflow: hidden;
@@ -107,7 +116,6 @@ a:hover{
 }
 .button-choose{
     background: linear-gradient(90deg, rgba(43, 122, 124, 0) 0%, rgba(43, 122, 124, 0.2) 52%, rgba(43, 122, 124, 0) 100%);
-
 }
 .button-choose a{
     padding: 8px 24px 8px 24px;
@@ -197,12 +205,15 @@ a:hover{
     border-radius: 5px;
 }
 .h-img{
-    max-height:88px;
-    max-width:66px;
+    min-height:88px;
+    min-width:66px;
     display: block;
     position: relative;
     overflow:hidden;
     border-radius: 5px;
+}
+.h-img img{
+    min-height: 88px;
 }
 .c-img img {
     position: absolute;
@@ -237,6 +248,7 @@ a:hover{
 .read-more-table{
     border: 0.5px solid #C0C0C0;
     border-radius: 10px;
+    overflow:hidden;
 }
 .read-more-table > div:first-child{
     background:#E7F3F3;
@@ -429,12 +441,12 @@ a:hover{
     max-width: 186px;
 }
  
-.swiper-banner .swiper-slide{  
+/* .swiper-banner .swiper-slide{  
     opacity:0;
 }
 .swiper-banner .swiper-slide.seen{  
     opacity:1;
-}
+} */
 .swiper-banner .pagination-banner{
     position: absolute;
     bottom: 10px !important;

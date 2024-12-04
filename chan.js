@@ -39,6 +39,7 @@ var swiper = {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
+        autoplay:true,
         slidesPerView: 1,
         loop: enableLoop, // Bật loop nếu đủ slide
         breakpoints: {
@@ -70,16 +71,16 @@ var swiper = {
         },
             }
         },
-        on: {
-          init: function () {
-              const swiper = this;
-              highlightNearbySlides(swiper.realIndex, SB.length); // Đánh dấu khi khởi tạo
-          },
-          slideChange: function () {
-              const swiper = this;
-              highlightNearbySlides(swiper.realIndex, SB.length); // Đánh dấu khi thay đổi slide
-          },
-      },
+      //   on: {
+      //     init: function () {
+      //         const swiper = this;
+      //         highlightNearbySlides(swiper.realIndex, SB.length); // Đánh dấu khi khởi tạo
+      //     },
+      //     slideChange: function () {
+      //         const swiper = this;
+      //         highlightNearbySlides(swiper.realIndex, SB.length); // Đánh dấu khi thay đổi slide
+      //     },
+      // },
         coverflowEffect: {
             rotate: 0,
             stretch: 150,
